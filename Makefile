@@ -10,7 +10,7 @@ BUILD_BASE_ARGS=--build-arg APP_NAME=$(APP_NAME) --build-arg GOLANG_TAG=$(GOLANG
 BUILD_TEST_ARGS=--build-arg IMAGE_NAME=$(IMAGE_NAME) --build-arg BASE_TAG=$(BASE_TAG)
 BUILD_ARGS=--build-arg IMAGE_NAME=$(IMAGE_NAME) --build-arg APP_NAME=$(APP_NAME) --build-arg BASE_TAG=$(BASE_TAG)
 # net port for webapp
-PORT=8080
+PORT=8081
 
 publish:
 	@echo ":::build publish image"
