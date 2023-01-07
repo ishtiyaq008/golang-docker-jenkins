@@ -4,11 +4,13 @@ pipeline {
   stages {
     stage('build base image') {
       steps {
+        echo 'building...'
         sh 'make build-base'
       }
     }
     stage('run tests') {
       steps {
+        echo 'testing..'
         sh 'make build-test'
         sh 'make test-unit'
         sh 'ls'
