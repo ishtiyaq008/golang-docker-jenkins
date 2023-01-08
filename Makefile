@@ -18,7 +18,6 @@ publish:
 
 build-base:
 	@echo ":::building base image"
-	sudo usermod -aG docker $USER
 	docker build --rm -f Base.Dockerfile $(BUILD_BASE_ARGS) -t $(IMAGE_NAME)-base:$(BASE_TAG) .
 
 build:
